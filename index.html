@@ -7,29 +7,56 @@
     <title>Facebook - log in or sign up</title>
     <link rel="stylesheet" href="/main.css" />
   </head>
-  <body>
-    <main>
-      <section class="container mt-48">
-        <div class="left">
-          <img src="./logo.svg" alt="Facebook" />
-          <h1>
+  <body class="bg-white">
+    <main class="bg-[#f0f2f5]">
+      <section
+        class="container flex pt-44 justify-evenly items-start h-[90vh] w-[80vw] gap-10 mx-auto"
+      >
+        <div class="left flex flex-col items-start w-[50%] justify-start">
+          <img class="w-72 inline-block" src="./logo.svg" alt="Facebook" />
+          <h1 class="text-3xl pl-6 font-[400]">
             Facebook helps you connect and share with the people in your life.
           </h1>
         </div>
-        <div class="right">
-          <div class="box">
+        <div class="right flex flex-col items-start">
+          <div
+            class="box flex flex-col items-start justify-center bg-white w-[25rem] p-5 gap-5 text-lg rounded-lg mb-5 shadow-lg"
+          >
             <input
+              class="w-[100%] outline outline-1 outline-gray-200 p-3 focus:outline-[#1877f2] rounded-md caret-[#1877f2]"
               type="text"
               placeholder="Email address or phone number"
               maxlength="50"
+              autofocus
             />
-            <input type="password" placeholder="Password" maxlength="50" />
-            <button>Log In</button>
-            <span><a href="#">Forgotten password?</a></span>
-            <hr />
-            <button>Create New Account</button>
+            <input
+              class="w-[100%] outline outline-1 outline-gray-200 p-3 focus:outline-[#1877f2] rounded-md caret-[#1877f2]"
+              type="password"
+              placeholder="Password"
+              maxlength="50"
+            />
+            <button
+              class="w-[100%] px-3 py-2 bg-[#1877f2] text-white rounded-md text-2xl font-semibold hover:bg-[#1d6ed9] transition-all duration-400"
+            >
+              Log In
+            </button>
+            <span
+              class="inline-block w-[100%] text-center text-sm text-[#1877f2] hover:underline"
+              ><a href="#">Forgotten password?</a></span
+            >
+            <hr class="w-[100%] border-gray-300" />
+            <button
+              class="bg-[#42b72a] hover:bg-[#3ca627] text-white mx-auto p-3 rounded-md font-semibold transition-all duration-400"
+            >
+              Create New Account
+            </button>
           </div>
-          <p><span>Create a Page</span> for a celebrity, brand or business.</p>
+          <p class="text-center w-[100%]">
+            <span class="font-semibold cursor-pointer hover:underline"
+              >Create a Page</span
+            >
+            for a celebrity, brand or business.
+          </p>
         </div>
       </section>
     </main>
