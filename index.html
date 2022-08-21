@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook - log in or sign up</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
     <link rel="stylesheet" href="/main.css" />
   </head>
-  <body class="bg-white flex flex-col">
-    <section class="bg-[#f0f2f5]">
+  <body class="bg-white flex flex-col h-[100%]">
+    <section class="bg-[#f0f2f5] flex-1 mb-5 pb-28">
       <main
-        class="container flex pt-44 justify-evenly items-start h-[90vh] w-[80vw] gap-10 mx-auto"
+        class="container flex flex-col lg:flex-row pt-24 lg:pt-44 justify-evenly items-center lg:items-start h-[90vh] w-[80vw] gap-10 mx-auto"
       >
         <div class="left flex flex-col items-start w-[50%] justify-start">
           <img class="w-72 inline-block" src="./logo.svg" alt="Facebook" />
-          <h1 class="text-3xl pl-6 font-[400]">
+          <h1 class="text-xl lg:text-3xl pl-6 font-[400]">
             Facebook helps you connect and share with the people in your life.
           </h1>
         </div>
@@ -61,8 +62,10 @@
       </main>
     </section>
 
-    <footer class="w-[70%] mx-auto flex flex-col gap-2 bg-white">
-      <div class="one">
+    <footer
+      class="w-[70%] mx-auto flex flex-col gap-3 bg-white p-6 flex-shrink-0"
+    >
+      <div class="one flex gap-2 text-xs text-[#737373] items-center flex-wrap">
         <span>English (UK)</span>
         <span>ગુજરાતી</span>
         <span>हिन्दी</span>
@@ -74,41 +77,47 @@
         <span>বাংলা</span>
         <span>മലയാളം</span>
         <span>Español</span>
-        <button>+</button>
+        <button
+          class="bg-gray-100 text-2xl font-bold p-0 grid place-content-center outline outline-gray-300 outline-1 hover:bg-gray-200 w-8 h-6"
+        >
+          +
+        </button>
       </div>
-      <hr />
-      <div class="two">
-        <span>Sign Up</span>
-        <span>Log In</span>
-        <span>Messenger</span>
-        <span>Facebook Lite</span>
-        <span>Watch</span>
-        <span>Places</span>
-        <span>Games</span>
-        <span>Marketplace</span>
-        <span>Facebook Pay</span>
-        <span>Oculus</span>
-        <span>Portal</span>
-        <span>Instagram</span>
-        <span>Bulletin</span>
-        <span>Local</span>
-        <span>Fundraisers</span>
-        <span>Services</span>
-        <span>Voting Information Centre</span>
-        <span>Groups</span>
-        <span>About</span>
-        <span>Create ad</span>
-        <span>Developers</span>
-        <span>Carrers</span>
-        <span>Privacy</span>
-        <span>Cookies</span>
-        <span>AdChoices</span>
-        <span>Terms</span>
-        <span>Help</span>
-        <span>Contact uploading and non-users</span>
+      <hr class="border-gray-300" />
+      <div
+        class="two flex flex-wrap gap-x-3 gap-y-1 text-xs text-[#737373] cursor-pointer"
+      >
+        <span class="hover:underline">Sign Up</span>
+        <span class="hover:underline">Log In</span>
+        <span class="hover:underline">Messenger</span>
+        <span class="hover:underline">Facebook Lite</span>
+        <span class="hover:underline">Watch</span>
+        <span class="hover:underline">Places</span>
+        <span class="hover:underline">Games</span>
+        <span class="hover:underline">Marketplace</span>
+        <span class="hover:underline">Facebook Pay</span>
+        <span class="hover:underline">Oculus</span>
+        <span class="hover:underline">Portal</span>
+        <span class="hover:underline">Instagram</span>
+        <span class="hover:underline">Bulletin</span>
+        <span class="hover:underline">Local</span>
+        <span class="hover:underline">Fundraisers</span>
+        <span class="hover:underline">Services</span>
+        <span class="hover:underline">Voting Information Centre</span>
+        <span class="hover:underline">Groups</span>
+        <span class="hover:underline">About</span>
+        <span class="hover:underline">Create ad</span>
+        <span class="hover:underline">Developers</span>
+        <span class="hover:underline">Carrers</span>
+        <span class="hover:underline">Privacy</span>
+        <span class="hover:underline">Cookies</span>
+        <span class="hover:underline">AdChoices</span>
+        <span class="hover:underline">Terms</span>
+        <span class="hover:underline">Help</span>
+        <span class="hover:underline">Contact uploading and non-users</span>
       </div>
       <div class="three">
-        <span>Meta &copy; 2022</span>
+        <span class="text-[11px] text-[#737373]">Meta &copy; 2022</span>
       </div>
     </footer>
   </body>
